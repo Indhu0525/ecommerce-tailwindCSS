@@ -18,13 +18,14 @@
 <body>
     <div class="task_1">
         <!-- header-top -->
-        <div class="bg-black h-auto   mx-2.5 block md:flex justify-between items-center p-0 md:pl-[2.75rem] lg:pl-[5.75rem] lg:pr-[3.75rem]">
+        <div
+            class="bg-black h-auto   mx-2.5 block md:flex justify-between items-center p-0 md:pl-[2.75rem] lg:pl-[5.75rem] lg:pr-[3.75rem]">
             <div class="text-white text-sm ml-0 xl:ml-60 px-5 py-2 md:px-0">
                 <p class="text-xs">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
                     <a href="#" class="font-semibold ml-2">ShopNow</a>
                 </p>
             </div>
-            <div class="text-white ">
+            <div class="text-white hidden md:flex">
                 <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
                     class="text-white 
                            font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
@@ -62,37 +63,46 @@
         <div class="grid grid-cols-12 gap-4 pt-12 pb-3 border-b mx-4 md:mx-24">
             <!-- Left section -->
             <div class="col-span-12 md:col-span-5 lg:col-span-8 ">
-                <div class="grid grid-cols-12">
-                    <div class="col-span-12 flex gap-2 lg:gap-10 xl:gap-36 ">
-                        <div class="col-span-12 md:col-span-4">
-                            <span class="font-bold text-xl md:text-2xl">Exclusive</span>
-                        </div>
-                        <nav class="col-span-12 md:col-span-8 lg:flex lg:items-center hidden">
-                            <div class="hidden md:flex md:justify-between items-center gap-4">
-                                <div id="mega-menu-full-cta" class="w-full md:flex md:w-auto">
+                    <div class="flex gap-2 justify-between md:justify-start lg:gap-10 xl:gap-36 w-full">
+                        <nav class=" col-span-12 md:col-span-8 w-full">
+                            <div class="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-start  lg:gap-10 xl:gap-36">
+                                <div class="col-span-12 md:col-span-4 flex">
+                                    <span class="font-bold text-xl md:text-2xl">Exclusive</span>
+                                </div>
+                                <button data-collapse-toggle="navbar-hamburger" type="button"
+                                    class="inline-flex md:hidden items-center justify-center w-10 h-10 text-sm text-gray-500 rounded-lg"
+                                    aria-controls="navbar-hamburger" aria-expanded="false">
+                                    <span class="sr-only">Open main menu</span>
+                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 17 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                    </svg>
+                                </button>
+                                <div id="navbar-hamburger" class="w-full lg:flex md:w-auto hidden ">
                                     <ul
                                         class="flex flex-col md:flex-row font-medium gap-2 md:gap-5 mt-4 md:mt-0 md:space-x-8 rtl:space-x-reverse">
                                         <li>
                                             <a href="#"
-                                                class="block text-gray-900 border-b hover:border-none border-black text-base font-normal">
+                                                class="block text-gray-900 border-0 lg:border-b hover:border-none hover:bg-gray-100 border-black text-base font-normal p-1 lg:p-0">
                                                 Home
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="block text-gray-900 hover:border-b border-black text-base font-medium">
+                                                class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
                                                 Contact
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="block text-gray-900 hover:border-b border-black text-base font-medium">
+                                                class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
                                                 About
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="block text-gray-900 hover:border-b border-black text-base font-medium">
+                                                class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
                                                 Sign Up
                                             </a>
                                         </li>
@@ -101,7 +111,6 @@
                             </div>
                         </nav>
                     </div>
-                </div>
             </div>
             <!-- Right section -->
             <div class="col-span-12 md:col-span-7 lg:col-span-4 ">
@@ -131,7 +140,7 @@
         <div class="mx-8 md:mx-24">
             <div class="grid grid-cols-12 ">
                 <div class="col-span-12 2xl:col-span-2 lg:col-span-2 md:col-span-4 flex justify-between ">
-                    <div class="border-r xl:w-[80%] 2xl:w-[90%] pt-8">
+                    <div class="border-r w-full lg:w-full md:w-[80%] xl:w-[80%] 2xl:w-[90%] pt-8">
                         <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
                             data-dropdown-trigger="hover"
                             class="
@@ -226,24 +235,31 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-span-12 sm:col-span-12 2xl:col-span-10 lg:col-span-10 md:col-span-8 pt-8 lg:pl-8 xl:pl-0 2xl:pl-8 pl-0">
-                    <div id="carousel" class="relative w-full bg-black text-white h-full overflow-hidden p-2" data-carousel="slide">
+                <div
+                    class="col-span-12 sm:col-span-12 2xl:col-span-10 lg:col-span-10 md:col-span-8 pt-8 lg:pl-8 xl:pl-0 2xl:pl-8 pl-0">
+                    <div id="carousel" class="relative w-full bg-black text-white h-full overflow-hidden p-2"
+                        data-carousel="slide">
                         <!-- Carousel wrapper -->
                         <div class="relative h-full min-h-[400px] overflow-hidden rounded-lg">
                             <!-- Item 1 -->
-                            <div class="duration-200 flex justify-between items-center h-full flex-col lg:flex-row" data-carousel-item>
+                            <div class="duration-200 flex justify-between items-center h-full flex-col lg:flex-row"
+                                data-carousel-item>
                                 <div class="lg:pl-12 pl-4 flex-1">
                                     <div class="flex items-center">
                                         <img src="./images/apple.png" class="w-10">
                                         <h3 class="text-sm ml-4">iPhone 14 Series</h3>
                                     </div>
-                                    <h1 class="text-3xl lg:text-5xl font-medium mt-4">Up to 10%<br><span class="mt-3">off Voucher</span></h1>
+                                    <h1 class="text-3xl lg:text-5xl font-medium mt-4">Up to 10%<br><span
+                                            class="mt-3">off Voucher</span></h1>
                                     <div class="flex items-center mt-5">
-                                        <button class="block text-white border-b hover:border-none border-white text-sm lg:text-base font-normal">
+                                        <button
+                                            class="block text-white border-b hover:border-none border-white text-sm lg:text-base font-normal">
                                             Shop Now
                                         </button>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
-                                            <path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" height="20px"
+                                            viewBox="0 -960 960 960" width="20px" fill="#ffffff">
+                                            <path
+                                                d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z" />
                                         </svg>
                                     </div>
                                 </div>
@@ -252,19 +268,24 @@
                                 </div>
                             </div>
                             <!-- Item 2 -->
-                            <div class="duration-200 flex justify-between items-center h-full flex-col lg:flex-row" data-carousel-item>
+                            <div class="duration-200 flex justify-between items-center h-full flex-col lg:flex-row"
+                                data-carousel-item>
                                 <div class="lg:pl-12 pl-4 flex-1">
                                     <div class="flex items-center">
                                         <img src="./images/apple.png" class="w-10">
                                         <h3 class="text-sm ml-4">iPhone 14 Series</h3>
                                     </div>
-                                    <h1 class="text-3xl lg:text-5xl font-medium mt-4">Up to 10%<br><span class="mt-3">off Voucher</span></h1>
+                                    <h1 class="text-3xl lg:text-5xl font-medium mt-4">Up to 10%<br><span
+                                            class="mt-3">off Voucher</span></h1>
                                     <div class="flex items-center mt-5">
-                                        <button class="block text-white border-b hover:border-none border-white text-sm lg:text-base font-normal">
+                                        <button
+                                            class="block text-white border-b hover:border-none border-white text-sm lg:text-base font-normal">
                                             Shop Now
                                         </button>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ffffff">
-                                            <path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" height="20px"
+                                            viewBox="0 -960 960 960" width="20px" fill="#ffffff">
+                                            <path
+                                                d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z" />
                                         </svg>
                                     </div>
                                 </div>
@@ -274,12 +295,14 @@
                             </div>
                         </div>
                         <div class="absolute bottom-4 left-1/2 transform  flex space-x-2">
-                            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <!-- flash sales -->
             <div class="grid grid-cols-12  mt-28">
@@ -692,49 +715,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-wrap justify-center md:justify-between gap-4 w-full my-4">
+                    <div class="flex flex-wrap   gap-4 w-full my-4">
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-CellPhone.png">
                             <span class="text-sm">Phones</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-Computer.png">
                             <span class="text-sm">Computers</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-SmartWatch.png" alt="SmartWatch Icon">
                             <span class="text-sm">SmartWatch</span>
                         </button>
                         <button
-                            class="bg-[#DB4444] border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4  ">
+                            class="bg-[#DB4444] border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4  ">
                             <img src="./images/Category-Camera.png" alt="Camera Icon">
                             <span class="text-sm text-white">Camera</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-Headphone.png" alt="HeadPhones Icon">
                             <span class="text-sm ">HeadPhones</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 hover:shadow-lg transition">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 hover:shadow-lg transition">
                             <img src="./images/Category-Gamepad.png" alt="Gaming Icon">
                             <span class="text-sm">Gaming</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-Computer.png">
                             <span class="text-sm">Computers</span>
                         </button>
                         <button
-                            class="border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4 ">
+                            class="border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4 ">
                             <img src="./images/Category-SmartWatch.png" alt="SmartWatch Icon">
                             <span class="text-sm">SmartWatch</span>
                         </button>
                         <button
-                            class="bg-[#DB4444] border rounded-lg flex flex-col justify-center items-center w-24 h-24 md:w-32 md:h-32 p-2 md:p-4  ">
+                            class="bg-[#DB4444] border rounded-lg flex flex-col justify-center items-center w-28 h-28 md:w-32 md:h-32 p-2 md:p-4  ">
                             <img src="./images/Category-Camera.png" alt="Camera Icon">
                             <span class="text-sm text-white">Camera</span>
                         </button>
@@ -751,9 +774,9 @@
                 </div>
                 <div class="col-span-12">
                     <div class="flex justify-between mt-6 mb-12">
-                    
-                            <span class="font-semibold text-3xl">Best Selling Products</span>
-                       
+
+                        <span class="font-semibold text-3xl">Best Selling Products</span>
+
                         <div class="flex justify-center md:justify-end items-center ">
                             <button type="button"
                                 class=" focus:outline-none text-[#FAFAFA] bg-[#DB4444]  text-xs px-3 md:px-9 py-3  rounded-sm  ">View
@@ -1047,28 +1070,27 @@
                                 <span class="mt-3">Music Experience</span>
                             </h1>
                             <div class="flex flex-wrap justify-start bg-black py-6  mt-4 gap-2">
-
-                                <button class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
+                                <button
+                                    class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
                                     <span class="text-xs md:text-3xl font-bold">23</span>
                                     <span class="text-xs md:text-sm">Hours</span>
                                 </button>
-                            
-                                <div class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
+                                <div
+                                    class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
                                     <span class="text-xs md:text-3xl font-bold">05</span>
                                     <span class="text-xs md:text-sm">Days</span>
                                 </div>
-                            
-                                <div class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
+                                <div
+                                    class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
                                     <span class="text-xs md:text-3xl font-bold">59</span>
                                     <span class="text-xs md:text-sm">Minutes</span>
                                 </div>
-                            
-                                <div class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
+                                <div
+                                    class="p-3 flex flex-col items-center justify-center w-20 h-20 bg-white rounded-full text-black">
                                     <span class="text-xs md:text-3xl font-bold">35</span>
                                     <span class="text-xs md:text-sm">Seconds</span>
                                 </div>
                             </div>
-                            
                             <div class="flex items-center justify-center md:justify-start mt-5">
                                 <button type="button"
                                     class="focus:outline-none text-white !bg-[#00FF66]  font-sm  px-10 py-2.5 rounded-md  mb-2">Buy
@@ -1082,7 +1104,7 @@
                 </div>
             </div>
             <!-- explore our products -->
-            <div class="pt-12 ">
+            <div class="pt-12">
                 <div class="col-span-12  flex justify-between my-2">
                     <div class="flex items-center">
 
@@ -1749,7 +1771,7 @@
                         </div>
                         <div class="flex flex-col space-y-8">
                             <div class="relative w-full  h-[19.6rem] md:h-full bg-black flex justify-end rounded-md">
-                                <img src="./images/hatpose.png" class="w-[55%] h-full object-contain">
+                                <img src="./images/hatpose.png" class="w-full h-full object-contain">
                                 <div class="absolute bottom-0 left-0 right-0 p-6">
                                     <h3 class="text-xl text-white font-bold">Women's Collections</h3>
                                     <p class="mt-2 text-white text-sm">Featured women’s collections that give you
@@ -1826,7 +1848,7 @@
                 </div>
             </div>
         </div>
-        <!--footer -->
+        <!-- footer -->
         <div class="footer bg-black p-12 md:p-6 border-b border-[#7D8184] flex justify-center">
             <div class="grid grid-cols-1 w-auto md:w-[90%] px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 <div class="flex justify-start   items-start">
