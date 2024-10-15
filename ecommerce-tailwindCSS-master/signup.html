@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>about-page</title>
+    <title>signup-page</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="script" href="./script.js">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -17,8 +17,7 @@
 </head>
 
 <body>
-    <div class="task_1">
-
+<div class="task_1">
         <!-- header-top -->
         <div
             class="bg-black h-auto   mx-2.5 block md:flex justify-between items-center p-0 md:pl-[2.75rem] lg:pl-[5.75rem] lg:pr-[3.75rem]">
@@ -136,250 +135,57 @@
                                 d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
                         </svg>
                     </button>
-                    <a href="./account.html">
+                    <button>
                         <img src="./images/user .png">
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
-
         <!-- main content -->
-        <div class="mx-8 md:mx-24">
-            <!-- breadcrumb -->
-            <nav class="flex my-11" aria-label="Breadcrumb">
-                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-                    <li class="inline-flex items-center">
-                        <a href="#" class="inline-flex items-center text-sm  text-[#7D8184] hover:text-blue-600">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <div class="flex items-center">
-                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
-                                    stroke-opacity="0.5" />
-                            </svg>
-                            <a href="#"
-                                class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2">About</a>
-                        </div>
-                    </li>
-                </ol>
-            </nav>
-            <!-- our story -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="flex items-center">
-                    <div class="">
-                        <span class="font-semibold text-[2.875rem]">Our Story</span>
-                        <div class="mt-5 text-[#000000] font-medium">
-                            <p class="">Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace
-                                with an active presense in Bangladesh.
-                                Supported by wide range of tailored marketing, data and service solutions,
-                                Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the
-                                region. </p>
-                            <p class="mt-5">Exclusive has more than 1 Million products to offer, growing at a very fast.
-                                Exclusive
-                                offers a diverse assotment in categories ranging from consumer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="./images/Side Image.png">
-                </div>
+        <div class="mx-8 md:mx-24 ">
+           <!-- gaming -->
+        <div class="grid grid-cols-8 gap-20 mt-16">
+            <div class="col-span-8 lg:col-span-5">
+                <img src="./images/signup.png" class="object-cover w-full h-[90%]">
             </div>
-
-            <!-- active site -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-32 border border-[#000000]">
-                <!-- card1 -->
-                <div class="w-full  bg-white border border-gray-200 shadow ">
-                    <div class="flex flex-col items-center px-4 py-6">
-                        <div class="flex justify-center">
-                            <div class="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center ">
-                                <button class="p-1 bg-black rounded-full text-white ">
-                                    <img src="./images/icon_shop.png" alt="Delivery Icon">
-                                </button>
+            <div class="col-span-8 lg:col-span-3 space-y-8 p-6 flex items-center">
+                    <div class="flex flex-col items-start w-full py-8 lg:py-0">
+                                <h1 class="text-xl font-semibold text-left text-gray-900 md:text-3xl dark:text-white">
+                                    Create an account
+                                </h1>
+                                <p class="text-sm font-semibold mt-5 mb-8">Enter your details below</p>
+                                <form class="space-y-4 md:space-y-6 w-full">
+                                    <div>
+                                        <input  class="focus:outline-none border-b border-[#7D8184] text-gray-900 text-sm  block w-full pb-2 focus:0" placeholder="Name" required="">
+                                    </div>
+                                    <div>
+                                        
+                                        <input type="email" name="email" id="email" placeholder="Email or Phone Number" class="focus:outline-none border-b border-[#7D8184] text-gray-900 text-sm  block w-full pb-2"required="">
+                                    </div>
+                                    <div>
+                                        <input type="password" name="password" id="password"  placeholder="Password"class="focus:outline-none border-b border-[#7D8184] text-gray-900 text-sm  block w-full pb-2" required="">
+                                    </div>
+                                   <div >
+                                    <button type="button" class="w-full focus:outline-none text-white bg-[#DB4444]  text-sm rounded-sm px-8 py-2.5 ">Create Account</button>
+                                   </div>
+                                   <button type="button" class="text-black border w-full  border-[#7D8184] focus:outline-none font-medium rounded-sm text-sm px-5 py-2.5 text-center gap-2 inline-flex items-center justify-center mb-2">
+                                    <img src="./images/Icon-Google.png" class="w-4 h-4">
+                                    Sign in with Google
+                                    </button>
+                                    <p class="mt-4 text-xs font-light text-gray-500 text-center">
+                                        Already have an account? <a href="./login.html" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Log in</a>
+                                    </p>
+                                </form>
                             </div>
                         </div>
-                        <span class="text-[1.5rem] text[#000000] mt-3 font-bold">10.5k</span>
-                        <p class="text-sm">Sallers active our site</p>
-                    </div>
-                </div>
-                <!-- card2 -->
-                <div class="w-full  bg-[#DB4444] border border-gray-200  shadow ">
-                    <div class="flex flex-col items-center px-4 py-6">
-                        <div class="flex justify-center">
-                            <div class="bg-[#E07575] rounded-full w-16 h-16 flex items-center justify-center ">
-                                <button class="p-1 bg-white rounded-full text-white ">
-                                    <img src="./images/Icon-Sale.png" alt="Delivery Icon">
-                                </button>
-                            </div>
-                        </div>
-                        <span class="text-[1.5rem] text[#000000] mt-3 font-bold text-white">33k</span>
-                        <p class="text-sm text-white">Monthly Product Sale</p>
-                    </div>
-                </div>
-                <!-- card3 -->
-                <div class="w-full  bg-white border border-gray-200  shadow ">
-                    <div class="flex flex-col items-center px-4 py-6">
-                        <div class="flex justify-center">
-                            <div class="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center ">
-                                <button class="p-1 bg-black rounded-full text-white ">
-                                    <img src="./images/Icon-Shopping bag.png" alt="Delivery Icon">
-                                </button>
-                            </div>
-                        </div>
-                        <span class="text-[1.5rem] text[#000000] mt-3 font-bold">45.5k</span>
-                        <p class="text-xs">Customer active in our site</p>
-                    </div>
-                </div>
-                <!-- card4 -->
-                <div class="w-full  bg-white border border-gray-200  shadow ">
-                    <div class="flex flex-col items-center px-4 py-6">
-                        <div class="flex justify-center">
-                            <div class="bg-gray-300 rounded-full w-16 h-16 flex items-center justify-center ">
-                                <button class="p-1 bg-black rounded-full text-white ">
-                                    <img src="./images/Icon-Moneybag.png" alt="Delivery Icon">
-                                </button>
-                            </div>
-                        </div>
-                        <span class="text-[1.5rem] text[#000000] mt-3 font-bold">25k</span>
-                        <p class="text-xs">Anual gross sale in our site</p>
-                    </div>
-                </div>
-            </div>
-            <!-- founders -->
-            <div class="grid grid-cols-1  md:grid-cols-3 gap-8 mt-24 ">
-                <!-- card1 -->
-                <div class="w-full h-[80%]">
-                    <div class="bg-[#F5F5F5] h-[78%]">
-                        <a href="#">
-                            <img class="h-full w-full px-8 pt-8" src="./images/tom cruse.png"
-                                alt="product image" />
-                        </a>
-                    </div>
-                    <div class="pt-5">
-                        <a href="#" class="mt-2">
-                            <h5 class="text-2xl font-medium">Tom Cruise</h5>
-                            <span class="text-sm">Founder & Chairman</span>
-                        </a>
-                        <div class="flex mt-3">
-                            <a href="#">
-                                <img src="./images/icon_twitter.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon-instagram.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon_linkedin.png">
-                            </a>
-                        </div>
-                </div>
-                </div>
-                <!-- card2 -->
-                <div class="w-full h-[80%]">
-                    <div class="bg-[#F5F5F5] h-[78%]">
-                        <a href="#">
-                            <img class=" w-full h-full px-8 pt-8" src="./images/emma-watson.png"
-                                alt="product image" />
-                        </a>
-                    </div>
-                    <div class="pt-5">
-                        <a href="#" class="mt-2">
-                            <h5 class="text-2xl font-medium">Emma Watson</h5>
-                            <span class="text-sm">Managing Director</span>
-                        </a>
-                        <div class="flex mt-3">
-                            <a href="#">
-                                <img src="./images/icon_twitter.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon-instagram.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon_linkedin.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- card3 -->
-                <div class="w-full h-[80%] ">
-                    <div class="bg-[#F5F5F5] h-[78%]">
-                        <a href="#">
-                            <img class=" w-full h-full px-8 pt-8" src="./images/will-smith.png"
-                                alt="product image" />
-                        </a>
-                    </div>
-                    <div class="pt-5">
-                        <a href="#" class="mt-2">
-                            <h5 class="text-2xl font-medium">Will Smith</h5>
-                            <span class="text-sm">Product Designer</span>
-                        </a>
-                        <div class="flex mt-3">
-                            <a href="#">
-                                <img src="./images/icon_twitter.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon-instagram.png">
-                            </a>
-                            <a href="#" class="ml-2">
-                                <img src="./images/icon_linkedin.png">
-                            </a>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-               <!-- customer suport -->
-               <div class="flex flex-col md:flex-row gap-10 xl:gap-20 justify-center mb-24">
-                <div class="block space-y-4 items-center">
-                    <div class="flex justify-center">
-                        <div class="bg-gray-300 rounded-full w-24 h-24 flex items-center justify-center ">
-                            <button class="p-3 bg-black rounded-full text-white w-22 h-22">
-                                <img src="./images/icon-delivery.png" alt="Delivery Icon">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <span class="text-xl font-bold text-center">FREE AND FAST DELIVERY<br>
-                            <span class="text-sm font-medium">Free delivery for all orders over $140</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="block space-y-4 items-center">
-                    <div class="flex justify-center">
-                        <div class="bg-gray-300 rounded-full w-24 h-24 flex items-center justify-center ">
-                            <button class="p-3 bg-black rounded-full text-white w-22 h-22">
-                                <img src="./images/Icon-Customer service.png" alt="Customer Service Icon">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <span class="text-xl font-bold text-center">24/7 CUSTOMER SERVICE<br>
-                            <span class="text-sm font-medium">Friendly 24/7 customer support</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="block space-y-4 items-center">
-                    <div class="flex justify-center">
-                        <div class="bg-gray-300 rounded-full w-24 h-24 flex items-center justify-center ">
-                            <button class="p-3 bg-black rounded-full text-white w-22 h-22">
-                                <img src="./images/Icon-secure.png" alt="Secure Payments Icon">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex justify-center">
-                        <span class="text-xl font-bold text-center">MONEY BACK GUARANTEE<br>
-                            <span class="text-sm font-medium">We reurn money within 30 days</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
         </div>
-
-
-
- <!-- footer -->
- <div class="footer bg-black p-12 md:p-6 border-b border-[#7D8184] flex justify-center">
+                
+               
+       
+        </div>
+        </div>
+   <!-- footer -->
+   <div class="footer bg-black p-12 md:p-6 border-b border-[#7D8184] flex justify-center mt-20" >
     <div class="grid grid-cols-1 w-auto md:w-[90%] px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-5 gap-6">
         <div class="flex justify-start   items-start">
             <ul class=" font-medium text-[#FAFAFA]">
@@ -496,14 +302,14 @@
     </div>
 </div>
 <!-- footerbottom -->
-<div class="bg-black p-2 flex justify-center items-center gap-2">
+<div class="bg-black p-2 flex justify-center items-center gap-2 ">
     <div class="">
         <img src="./images/ic--baseline-copyright.svg">
         </img>
     </div>
     <p class="text-[#7D8184] text-xs">Copyright Rimel 2022. All right reserved</p>
 </div>
-    </div>
+</div>
 </body>
 
 </html>
