@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>account-page</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="script" href="./script.js">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <div class="task_1">
+
+        <!-- header-top -->
+        <div
+            class="bg-black h-auto   mx-2.5 block md:flex justify-between items-center p-0 md:pl-[2.75rem] lg:pl-[5.75rem] lg:pr-[3.75rem]">
+            <div class="text-white text-sm ml-0 xl:ml-60 px-5 py-2 md:px-0">
+                <p class="text-xs">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                    <a href="#" class="font-semibold ml-2">ShopNow</a>
+                </p>
+            </div>
+            <div class="text-white hidden md:flex">
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                    class="text-white 
+                           font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                    type="button">
+                    English
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" height="20px" viewBox="0 -960 960 960"
+                        width="20px" fill="#FFFFFF">
+                        <path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z" />
+                    </svg>
+                </button>
+                <div id="dropdownHover" class="hidden z-10 w-44 bg-white rounded-lg shadow dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header-bottom -->
+        <div class="grid grid-cols-12 gap-4 pt-12 pb-3 border-b mx-4 md:mx-24">
+            <!-- Left section -->
+            <div class="col-span-12 md:col-span-5 lg:col-span-8 ">
+                <div class="flex gap-2 justify-between md:justify-start lg:gap-10 xl:gap-36 w-full">
+                    <nav class=" col-span-12 md:col-span-8 w-full">
+                        <div
+                            class="max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-start  lg:gap-10 xl:gap-36">
+                            <div class="col-span-12 md:col-span-4 flex">
+                                <span class="font-bold text-xl md:text-2xl">Exclusive</span>
+                            </div>
+                            <button data-collapse-toggle="navbar-hamburger" type="button"
+                                class="inline-flex md:hidden items-center justify-center w-10 h-10 text-sm text-gray-500 rounded-lg"
+                                aria-controls="navbar-hamburger" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                </svg>
+                            </button>
+                            <div id="navbar-hamburger" class="w-full lg:flex md:w-auto hidden ">
+                                <ul
+                                    class="flex flex-col md:flex-row font-medium gap-2 md:gap-5 mt-4 md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                                    <li>
+                                        <a href="./index.html"
+                                            class="block text-gray-900 border-0 lg:border-b hover:border-none hover:bg-gray-100 border-black text-base font-normal p-1 lg:p-0">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./about.html"
+                                            class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
+                                            Sign Up
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Right section -->
+            <div class="col-span-12 md:col-span-7 lg:col-span-4 ">
+                <div class="flex md:justify-end items-center gap-3 md:gap-5">
+                    <div class="relative flex items-center">
+                        <input type='text' placeholder='what are you looking for?'
+                            class="shadow-lg py-1.5 pl-3 pr-16 text-sm text-[#FAFAFA] rounded bg-white border border-gray-400 w-full outline-[#333]" />
+
+                        <div class="absolute right-4">
+                            <img src="./images/searchicon.png">
+                        </div>
+                    </div>
+                    <button>
+                        <img src="./images/heart small.png">
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#000000">
+                            <path
+                                d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                        </svg>
+                    </button>
+                    <button>
+                        <img src="./images/user .png">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="mx-8 md:mx-24 ">
+            <!-- breadcrumb -->
+            <nav class="flex my-11" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <li class="inline-flex items-center">
+                        <a href="#" class="inline-flex items-center text-sm  text-[#7D8184] hover:text-blue-600">
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
+                                    stroke-opacity="0.5" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-medium text-[#7D8184] hover:text-blue-600 md:ms-2">Gaming</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
+                                    stroke-opacity="0.5" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2">Havic HV G-92 Gamepad</a>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+           <!-- gaming -->
+        <div class="grid grid-cols-5  gap-6">
+            <div class="col-span-5 lg:col-span-1">
+                <div class="grid grid-rows-4  gap-4">
+                    <div class="row-span-5 md:row-span-1">
+                        <div class="bg-[#F5F5F5] flex justify-center items-center rounded-md">
+                            <a href="#">
+                                <img class="object-contain py-5" src="./images/gamepad1.png"
+                                    alt="product image" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-span-5 md:row-span-1 ">
+                        <div class="bg-[#F5F5F5] flex justify-center items-center h-full  rounded-md">
+                            <a href="#">
+                                <img class="object-contain py-5" src="./images/gamepad2.png"
+                                    alt="product image" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-span-5 md:row-span-1 ">
+                        <div class="bg-[#F5F5F5] flex justify-center items-center h-full  rounded-md">
+                            <a href="#">
+                                <img class="object-contain py-5" src="./images/gamepad3.png"
+                                    alt="product image" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-span-5 md:row-span-1 ">
+                        <div class="bg-[#F5F5F5] flex justify-center items-center h-full  rounded-md">
+                            <a href="#">
+                                <img class="object-contain py-5" src="./images/gamepad4.png"
+                                    alt="product image" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-5 lg:col-span-2">
+                <div class="bg-[#F5F5F5] flex justify-center items-center rounded-md h-full">
+                    <a href="#">
+                        <img class="object-contain py-5 px-3" src="./images/gamepad5.png"
+                            alt="product image" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-5 lg:col-span-2">
+                <div class="pl-8 rounded-md h-full">
+                    <h3 class="text-lg font-semibold">Havic HV G-92 Gamepad</h3>
+                    <div class=" flex flex-row items-center">
+                        <div class="flex items-center py-1">
+                            <svg class="w-3 h-3 text-[#FFAD33] me-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-3 h-3 text-[#FFAD33] me-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-3 h-3 text-[#FFAD33] me-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-3 h-3 text-[#FFAD33] me-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <svg class="w-3 h-3 text-gray-300 me-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <p class="ml-2 text-xs font-medium text-gray-500 dark:text-gray-400 text-center ">(150 Reviews) |<span class="pl-2 text-xs text-[#00FF66]">In Stock</span></p>
+
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold">$192.00</h3>
+                    <p class="text-xs py-4 border-b border-[#7D8184]">PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+                    <div class=" flex flex-row items-center">
+                        <div class="flex items-center">
+                            <p class="py-4 font-semibold text-lg">Colors:</p>
+                            <button type="button" class="ml-5 border border-black rounded-full p-0.5 me-2">
+                                <span class="flex w-2 h-2 bg-[#A0BCE0] rounded-full border-black">
+                                </span>
+                            </button>
+                            <button class="flex w-4 h-4 bg-[#DB4444] rounded-full border-black">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <div class="flex items-center gap-3">
+                            <p class=" font-semibold text-lg">Size:</p>
+                            <button type="button" class=" border border-[#7D8184] rounded-md  p-1.5 font-semibold text-xs">
+                                XS
+                            </button>
+                            <button type="button" class=" border border-[#7D8184] rounded-md py-1.5 px-2 font-semibold text-xs">
+                                S
+                            </button>
+                            <button type="button" class="  rounded-md py-1.5 px-2  font-semibold text-xs bg-[#DB4444] text-white">
+                              M
+                            </button>
+                            <button type="button" class="border border-[#7D8184] rounded-md py-1.5 px-2  font-semibold text-xs">
+                               L
+                            </button>
+                            <button type="button" class=" border border-[#7D8184] rounded-md p-1.5 font-semibold text-xs">
+                                XL
+                             </button>
+                        </div>
+                    </div>
+                    <div class="block md:flex gap-5  items-center my-6 ">
+                    <div class="flex items-center  border-0 md:border border-[#7D8184]">
+                        <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class="border-r border-[#7D8184] px-2 py-2 inline-flex shrink-0 items-center justify-center  bg-gray-100 hover:bg-gray-200 ">
+                          <svg class="h-4 w-4  text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
+                          </svg>
+                        </button>
+                        <div class="border-[#7D8184] border-r">
+                        <input type="text" id="counter-input" data-input-counter class=" w-16  text-center text-sm font-medium text-gray-900" placeholder="" value="2" required />
+                    </div>
+                        <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class=" px-2 py-2 inline-flex shrink-0 items-center justify-center  bg-gray-100 hover:bg-gray-200 ">
+                            <svg class="h-2.5 w-2.5 text-gray-900 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
+                              </svg>
+                          </button>
+                       
+                      </div>
+                      <div class="flex items-center ">
+                        <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class="bg-[#DB4444] text-white xl:px-8 xl:py-2 px-5 py-2 inline-flex items-center justify-center rounded-md ">
+                          Buy now
+                        </button>
+                        
+                      </div>
+                      <div class="flex items-center border border-[#7D8184] rounded-md">
+                        <button type="button" id="decrement-button" data-input-counter-decrement="counter-input" class="px-2 py-2 inline-flex shrink-0 items-center justify-center rounded-md  bg-gray-100 hover:bg-gray-200 ">
+                         <img src="./images/heart small.png">
+                        </button>
+                       
+                      </div>
+                    </div>
+
+                    <div class="my-4 border border-[#7D8184] rounded-md">
+                        <butto class="flex gap-4 p-3 items-center border-b border-[#7D8184]">
+                            <img src="./images/icon-delivery -black.png" class="w-[2.188rem] h-[2.188rem]">
+                            <button class="block space-y-1">
+                                <p class="text-base font-medium">Free Delivery</p>
+                                <div>
+                                    <p class="text-sm font-medium">Enter your postal code for Delivery Availability</p>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="flex gap-4 p-3 items-center">
+                            <img src="./images/Icon-return.png" class="w-[2.188rem] h-[2.188rem]">
+                            <div class="block space-y-1">
+                                <p class="text-base font-medium">Return Delivery</p>
+                                <div>
+                                    <p class="text-sm font-medium">Free 30 Days Delivery Returns. Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-12  my-28">
+                <div class="col-span-12  flex justify-between ">
+                    <div class="flex items-center">
+                        <div class="w-4 h-8 bg-[#DB4444] rounded-sm"></div>
+                        <span class="ml-3 text-[#DB4444] text-sm font-semibold">Related Item</span>
+                    </div>
+                </div>
+              
+            
+                <div class="col-span-12 mt-8 ">
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-10">
+                        <div class="rounded-lg overflow-hidden flex flex-col justify-between h-full">
+                            <div class="relative group">
+                                <a href="#" class="flex justify-center items-center bg-gray-100 h-60">
+                                    <img class=" object-contain " src="./images/gaming.png">
+    
+                                </a>
+                                <button
+                                    class="invisible group-hover:visible p-2 text-sm absolute bottom-0 text-white bg-black w-full  flex flex-col items-center justify-center mr-2">
+                                    <p class="text-sm font-semibold">Add To Cart</p>
+                                </button>
+                                <a href="#">
+                                    <div
+                                        class="px-2.5 py-[0.10rem] text-sm absolute top-0 bg-[#DB4444] text-white rounded-sm flex flex-col items-center justify-center mt-2 ml-2">
+                                        <span class="text-[0.625rem] text-[#FAFAFA]">- 40%</span>
+                                    </div>
+                                </a>
+                                <div class="block">
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-2 mr-2">
+                                        <img src="./images/heart small.png">
+                                    </button>
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-12 mr-2">
+                                        <img src="./images/Quick View.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class=" py-4">
+                                <a href="#"
+                                    class="font-semibold text-md inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    HAVIT HV-G92 Gamepad
+                                </a>
+                                <p class="text-[#DB4444] text-sm py-2">
+                                    $120 <span class="ml-3 text-gray-400">$160</span>
+                                </p>
+                                <div class=" flex flex-row items-center">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <p class="ml-2 text-xs font-medium text-gray-500 dark:text-gray-400">(88)</p>
+    
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="rounded-lg overflow-hidden  flex flex-col justify-between h-full">
+                            <div class="relative group">
+                                <a href="#" class="flex justify-center items-center bg-gray-100 h-60">
+                                    <img class=" object-contain " src="./images/keyboard.png">
+                                    <div
+                                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0">
+                                    </div>
+                                </a>
+                                <div
+                                    class="px-2.5 py-[0.10rem] text-sm absolute top-0 bg-[#DB4444] text-white rounded-sm flex flex-col items-center justify-center mt-2 ml-2">
+                                    <span class="text-[0.625rem] text-[#FAFAFA]">-40%</span>
+                                </div>
+    
+                                <div class="block">
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-2 mr-2">
+                                        <img src="./images/heart small.png">
+                                    </button>
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-12 mr-2">
+                                        <img src="./images/Quick View.png">
+                                    </button>
+                                    <button
+                                        class="p-2 text-sm absolute bottom-0 text-white bg-black w-full  flex flex-col items-center justify-center mr-2">
+                                        <p class="text-sm font-semibold">Add To Cart</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class=" py-4">
+                                <a href="#"
+                                    class="font-semibold text-md inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    AK-900 Wired Keyboard
+                                </a>
+                                <p class="text-[#DB4444] text-sm py-2">
+                                    $960 <span class="ml-3 text-gray-400">$1160</span>
+                                </p>
+                                <div class=" flex flex-row items-center">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <p class="ml-2 text-xs font-medium text-gray-500 dark:text-gray-400">(75)</p>
+    
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="rounded-lg overflow-hidden flex flex-col justify-between h-full">
+                            <div class="relative group">
+                                <a href="#" class="flex justify-center items-center bg-gray-100 h-60">
+                                    <img class=" object-contain " src="./images/Telivison.png">
+    
+                                </a>
+                                <button
+                                    class="invisible group-hover:visible p-2 text-sm absolute bottom-0 text-white bg-black w-full  flex flex-col items-center justify-center mr-2">
+                                    <p class="text-sm font-semibold">Add To Cart</p>
+                                </button>
+                                <a href="#">
+                                    <div
+                                        class="px-2.5 py-[0.10rem] text-sm absolute top-0 bg-[#DB4444] text-white rounded-sm flex flex-col items-center justify-center mt-2 ml-2">
+                                        <span class="text-[0.625rem] text-[#FAFAFA]">- 40%</span>
+                                    </div>
+                                </a>
+                                <div class="block">
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-2 mr-2">
+                                        <img src="./images/heart small.png">
+                                    </button>
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-12 mr-2">
+                                        <img src="./images/Quick View.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class=" py-4">
+                                <a href="#"
+                                    class="font-semibold text-md inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    IPS LCD Gaming Monitor
+                                </a>
+                                <p class="text-[#DB4444] text-sm py-2">
+                                    $370 <span class="ml-3 text-gray-400">$400</span>
+                                </p>
+                                <div class=" flex flex-row items-center">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <p class="ml-2 text-xs font-medium text-gray-500 dark:text-gray-400">(99)</p>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-lg overflow-hidden flex flex-col justify-between h-full">
+                            <div class="relative group">
+                                <a href="#" class="flex justify-center items-center bg-gray-100 h-60">
+                                    <img class=" object-contain " src="./images/chair.png">
+    
+                                </a>
+                                <button
+                                    class="invisible group-hover:visible p-2 text-sm absolute bottom-0 text-white bg-black w-full  flex flex-col items-center justify-center mr-2">
+                                    <p class="text-sm font-semibold">Add To Cart</p>
+                                </button>
+                                <a href="#">
+                                    <div
+                                        class="px-2.5 py-[0.10rem] text-sm absolute top-0 bg-[#DB4444] text-white rounded-sm flex flex-col items-center justify-center mt-2 ml-2">
+                                        <span class="text-[0.625rem] text-[#FAFAFA]">- 40%</span>
+                                    </div>
+                                </a>
+                                <div class="block">
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-2 mr-2">
+                                        <img src="./images/heart small.png">
+                                    </button>
+                                    <button
+                                        class="p-1 text-sm absolute top-0 right-0 bg-white rounded-full flex flex-col items-center justify-center mt-12 mr-2">
+                                        <img src="./images/Quick View.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class=" py-4">
+                                <a href="#"
+                                    class="font-semibold text-md inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                                    S-Series Comfort Chair
+                                </a>
+                                <p class="text-[#DB4444] text-sm py-2">
+                                    $375 <span class="ml-3 text-gray-400">$400</span>
+                                </p>
+                                <div class=" flex flex-row items-center">
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <svg class="w-4 h-4 text-[#FFAD33] me-1" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                            <path
+                                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                        </svg>
+                                        <p class="ml-2 text-xs font-medium text-gray-500 dark:text-gray-400">(99)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        </div>
+
+   <!-- footer -->
+   <div class="footer bg-black p-12 md:p-6 border-b border-[#7D8184] flex justify-center mt-20" >
+    <div class="grid grid-cols-1 w-auto md:w-[90%] px-4 py-6 lg:py-8 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="flex justify-start   items-start">
+            <ul class=" font-medium text-[#FAFAFA]">
+                <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase"> Exclusive</li>
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline font-light">Subscribe</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Get 10% off your first order</a>
+                </li>
+                <li class="">
+                    <div class="space-y-6 font-[sans-serif] max-w-md mx-auto">
+                        <div>
+                            <div class="relative flex items-center">
+                                <input type='text' placeholder='Enter your Email'
+                                    class="py-3 px-3 text-sm text-[#FAFAFA] rounded bg-black border border-gray-400 w-full outline-[#333]" />
+                                <div class="absolute right-4">
+                                    <img src="./images/send.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-start  items-start">
+            <ul class=" font-medium text-[#FAFAFA]">
+                <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase"> Support</li>
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline font-light">111 Bijoy sarani, Dhaka, DH 1515,
+                        Bangladesh.</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">exclusive@gmail.com</a>
+                </li>
+                <li class="">
+                    <a href="#" class="hover:underline font-light">+88015-88888-9999</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-start   items-start">
+            <ul class=" font-medium text-[#FAFAFA]">
+                <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase"> Account</li>
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline font-light">My Account</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Login / Register</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Cart</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Wishlist</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Shop</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-start  items-start">
+            <ul class=" font-medium text-[#FAFAFA]">
+                <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase"> Quick Link</li>
+                <li class="mb-4">
+                    <a href="#" class=" hover:underline font-light">Privacy Policy</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Terms Of Use</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">FAQ</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" class="hover:underline font-light">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-start   items-start">
+            <ul class=" font-medium text-[#FAFAFA]">
+                <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase">Download App</li>
+                <li class="mb-4">
+                    <a href="#" class="text-xs hover:underline font-light text-[#7D8184]">Save $3 with App New
+                        User Only</a>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between gap-2">
+                        <img src="./images/Qr Code.png">
+                        <div class="block space-y-2">
+                            <img src="./images/googleplay.png">
+                            <div>
+                                <img src="./images/download-appstore.png">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <a href="#">
+                            <img src="./images/Icon-Facebook.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/Icon-Twitter.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/mdi--instagram.svg">
+                        </a>
+                        <a href="#">
+                            <img src="./images/Icon-Linkedin.png">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- footerbottom -->
+<div class="bg-black p-2 flex justify-center items-center gap-2 ">
+    <div class="">
+        <img src="./images/ic--baseline-copyright.svg">
+        </img>
+    </div>
+    <p class="text-[#7D8184] text-xs">Copyright Rimel 2022. All right reserved</p>
+</div>
+
+</div>
+
+</body>
+
+</html>
