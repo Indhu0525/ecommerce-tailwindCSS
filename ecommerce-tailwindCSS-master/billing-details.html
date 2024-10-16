@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>myaccount-page</title>
+    <title>billingdetails-page</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="script" href="./script.js">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -155,7 +155,7 @@
                 <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                     <li class="inline-flex items-center">
                         <a href="#" class="inline-flex items-center text-sm  text-[#7D8184] hover:text-blue-600">
-                            Home
+                            Account
                         </a>
                     </li>
                     <li>
@@ -166,109 +166,145 @@
                                     stroke-opacity="0.5" />
                             </svg>
                             <a href="#"
-                                class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2">My account</a>
+                                class="ms-1 text-sm font-medium text-[#7D8184] hover:text-blue-600 md:ms-2">My account</a>
+                        </div>
+                    </li>
+               
+                
+                    <li>
+                        <div class="flex items-center">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
+                                    stroke-opacity="0.5" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-medium text-[#7D8184] hover:text-blue-600 md:ms-2">Product</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
+                                    stroke-opacity="0.5" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-medium text-[#7D8184] hover:text-blue-600 md:ms-2">View Cart</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="6.4453" y1="0.852389" x2="0.445304" y2="12.6024" stroke="black"
+                                    stroke-opacity="0.5" />
+                            </svg>
+                            <a href="#"
+                                class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2"> CheckOut</a>
                         </div>
                     </li>
                 </ol>
-                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-                    <li class="inline-flex items-center">
-                        <a href="#" class="inline-flex items-center text-sm   hover:text-blue-600 font-semibold">
-                           Welcome!
-                        </a>
-                    </li>
-                    <li class="inline-flex items-center">
-                        <a href="#" class="inline-flex items-center text-sm  text-[#DB4444] hover:text-blue-600">
-                            Md Rimel
-                        </a>
-                    </li>
-                  
-                </ol>
+           
             </nav>
            <!-- gaming -->
-        <div class="grid grid-cols-8 gap-6">
-            <div class="col-span-8 lg:col-span-2">
-                <ul class="py-2 text-sm font-semibold" aria-labelledby="dropdownHoverButton">Manage My Account
-                    <li>
-                        <a href="#"
-                            class="block px-9 mt-4   font-normal text-[#DB4444]">My Profile</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block px-9 py-1.5 text-[#7D8184] font-normal hover:text-[#DB4444]">Address Book</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block px-9  text-[#7D8184] font-normal hover:text-[#DB4444]">My Payment Options</a>
-                    </li>
-                </ul>
-                <ul class="py-2 text-sm font-semibold" aria-labelledby="dropdownHoverButton">My Orders
-                    <li>
-                        <a href="#"
-                            class="block px-9 mt-4  text-[#7D8184] font-normal hover:text-[#DB4444]">My Returns</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="block px-9 py-1.5 text-[#7D8184] font-normal hover:text-[#DB4444]">My Cancellations</a>
-                    </li>
-                </ul>
-                <ul class="py-2 text-sm font-semibold" aria-labelledby="dropdownHoverButton">My WishList
-                </ul>
-             
+           <p class="text-3xl font-semibold pb-8">Billing Details</p>
+        <div class="grid grid-cols-7 gap-4 lg:gap-24">
+            <div class="col-span-7 lg:col-span-3">
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">First Name<span class="text-[#DB4444]"> *</span></label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Company Name</label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Street Address<span class="text-[#DB4444]"> *</span></label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Apartment, floor, etc. (optional)</label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Town/City<span class="text-[#DB4444]"> *</span></label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Phone Number<span class="text-[#DB4444]"> *</span></label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                        <div class="pb-5">
+                            <label class="text-[#7D8184] ">Email Address<span class="text-[#DB4444]"> *</span></label>
+                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none "  required />
+                        </div>
+                   
+                        <div class="flex items-start mb-5">
+                            <div class="flex items-center h-5">
+                                <input type="checkbox" class="accent-[#DB4444] w-4 h-4" checked>
+                                
+                            </div>
+                            <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Save this information for faster check-out next time</label>
+                          </div>
             </div>
-            <div class="col-span-8 lg:col-span-6 space-y-8  bg-[#FFFFFF] px-20 py-6 drop-shadow-lg rounded-md">
-                <p class="text-lg font-semibold text-[#DB4444]">Edit Your Profile</p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="col-span-2 lg:col-span-1">
-                        <div>
-                            <label class="font-semibold">First name</label>
-                            <input type="text" id="first_name" class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="Md" required />
-                        </div>
+            <div class="col-span-7 lg:col-span-4  bg-[#FFFFFF]  rounded-md">
+                <div class="flex justify-between mb-8">
+                    <div class="flex gap-6 items-center">
+                        <img src="./images/gamingcart.png">
+                        <p class="text-sm font-semibold">LCD Monitor</p>
                     </div>
-                    <div class="col-span-2 lg:col-span-1">
-                        <div>
-                            <label class="font-semibold">Last name</label>
-                            <input type="text" id="first_name" class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="Rimel" required />
-                        </div>
-                    </div>
-                   
+                    <p class="text-sm font-semibold">$650</p>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="col-span-2 lg:col-span-1">
-                        <div>
-                            <label class="font-semibold">Email</label>
-                            <input type="text" id="first_name" class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="rimel1111@gmail.com" required />
-                        </div>
-                    </div>
-                    <div class="col-span-2 lg:col-span-1">
-                        <div>
-                            <label class="font-semibold">Address</label>
-                            <input type="text" id="first_name" class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="Kingston, 5236, United State" required />
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="grid grid-cols-1 gap-6">
-                    <div class="col-span-2 lg:col-span-1">
-                        <div>
-                            <label class="font-semibold">Password changes</label>
-                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5] mt-1 text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="Cusrrent password" required />
-                        </div>
-                        <div class="py-3">
-                           
-                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5]  text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="New Passwod" required />
-                        </div>
-                        <div>
-                           
-                            <input type="password" name="password" id="password"   class="bg-[#F5F5F5]  text-gray-900 text-sm rounded-sm block w-full p-2.5 focus:outline-none " placeholder="Confirm New Passwod" required />
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="col-span-3 flex justify-end ">
-                        <button type="button" class="focus:outline-none text-black   text-sm rounded-sm px-8 py-2.5 ">Cancel</button>
-                        <button type="button" class="focus:outline-none text-white bg-[#DB4444]  text-sm rounded-sm px-8 py-2.5 ">Send Massage</button>
-                    </div>
-                </div>
+           <div class="flex justify-between mb-8">
+            <div class="flex gap-6 items-center">
+                <img src="./images/TV.png">
+                <p class="text-sm font-semibold">H1 Gamepad</p>
+            </div>
+            <p class="text-sm font-semibold">$1100</p>
+           </div>
+           <div class="flex justify-between text-sm pb-3 border-b ">
+            <p>Subtotal:</p>
+            <button>$1750</button>
+        </div>
+        <div class="flex justify-between text-sm py-3  border-b ">
+            <p>Shipping:</p>
+            <button>Free</button>
+        </div>
+        <div class="flex justify-between text-sm py-3 mb-4">
+            <p>Total:</p>
+            <button>$1750</button>
+        </div>
+        <div class="flex justify-between mb-4">
+            <div class="flex gap-3 items-center">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4  bg-gray-100 border-gray-300 ">
+                <p class="text-sm font-semibold">Bank</p>
+            </div>
+            <div class="flex gap-3 items-center">
+<img src="./images/kbash.png"">
+<img src="./images/visa.png">
+<img src="./images/mastercard.png">
+<img src="./images/nasik.png">
+            </div>
+        </div>
+        <div class="flex gap-3 items-center mb-5">
+            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 checked bg-gray-100 border-gray-300 ">
+            <p class="text-sm font-semibold">Cash on delivery</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5  gap-5 ">
+            <div class="md:col-span-3 col-span-1">
+                <input type="text" class="w-full focus:outline-none text-[#7D8184] border-2 border[#7D8184] text-sm rounded-sm px-3 md:px-5 py-2.5 text-start" placeholder="Coupon Code"/>
+            </div>
+            <div class="md:col-span-2 col-span-1">
+                <button type="button" class="w-full focus:outline-none text-[#FAFAFA]  bg-[#DB4444] text-sm rounded-sm px-4 md:px-1 py-2.5 ">Apply Coupon</button>
+            </div>
+            <div class="md:col-span-2 col-span-1">
+                <button type="button" class="w-full focus:outline-none text-[#FAFAFA]  bg-[#DB4444] text-sm rounded-sm px-4 md:px-1 py-2.5 ">Place Order</button>
+            </div>
+        </div>
+    
+      
+     
             </div>
         </div>
         </div>
