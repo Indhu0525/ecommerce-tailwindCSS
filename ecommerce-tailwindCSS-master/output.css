@@ -1,1 +1,13 @@
- 
+
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1 !important; 
+    display: inline-block !important; 
+    background-color: white !important;
+  }
+
+  input[type="number"] {
+    -webkit-appearance: number-input;
+    appearance: number-input;
+  }

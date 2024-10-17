@@ -114,21 +114,20 @@
             </div>
             <!-- Right section -->
             <div class="col-span-12 md:col-span-7 lg:col-span-4 ">
-                <div class="flex md:justify-end items-center gap-3 md:gap-5">
-                    <div class="relative flex items-center">
-                        <input type='text' placeholder='what are you looking for?'
-                            class="shadow-lg py-1.5 pl-3 pr-16 text-sm text-[#FAFAFA] rounded bg-white border border-gray-400 w-full outline-[#333]" />
-
-                        <div class="absolute right-4">
-                            <img src="./images/searchicon.png">
+                <div class="flex justify-end items-center gap-3 lg:gap-1.5 xl:gap-5">
+                    <div class="relative  max-w-md">
+                        <input type="text" placeholder="what are you looking for?"
+                            class=" py-1.5 pl-3 mr-16 text-sm text-gray-700 rounded bg-[#F5F5F5] border border-gray-300 w-full outline-none " />
+                        <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+                            <img src="./images/searchicon.png" class="w-5 h-5">
                         </div>
                     </div>
-                    <a href="./wishlist.html">
+                    <a href="./wishlist.html" class="flex items-center">
                     <button>
                         <img src="./images/heart small.png">
                     </button>
                 </a>
-                    <a href="./cart.html">
+                    <a href="./cart.html" class="flex items-center">
                     <button>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#000000">
@@ -137,9 +136,6 @@
                         </svg>
                     </button>
                 </a>
-                    <a href="./myaccount.html">
-                        <img src="./images/user .png">
-                    </a>
                 </div>
             </div>
         </div>
@@ -1900,7 +1896,7 @@
                     <ul class=" font-medium text-[#FAFAFA]">
                         <li class="mb-6 text-lg font-semibold text-[#FAFAFA] uppercase"> Account</li>
                         <li class="mb-4">
-                            <a href="#" class=" hover:underline font-light">My Account</a>
+                            <a href="./myaccount.html" class=" hover:underline font-light">My Account</a>
                         </li>
                         <li class="mb-4">
                             <a href="#" class="hover:underline font-light">Login / Register</a>

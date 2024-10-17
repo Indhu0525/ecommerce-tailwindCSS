@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+   
 </head>
 
 <body>
@@ -60,10 +61,10 @@
                 </div>
             </div>
         </div>
-        <!-- header-bottom -->
-        <div class="grid grid-cols-12 gap-4 pt-12 pb-3 border-b mx-4 md:mx-24">
+          <!-- header-bottom -->
+          <div class="grid grid-cols-12 gap-4 pt-12 pb-3 border-b mx-4 md:mx-24">
             <!-- Left section -->
-            <div class="col-span-12 md:col-span-5 lg:col-span-8 ">
+            <div class="col-span-12 md:col-span-5 lg:col-span-7 ">
                 <div class="flex gap-2 justify-between md:justify-start lg:gap-10 xl:gap-36 w-full">
                     <nav class=" col-span-12 md:col-span-8 w-full">
                         <div
@@ -83,7 +84,7 @@
                             </button>
                             <div id="navbar-hamburger" class="w-full lg:flex md:w-auto hidden ">
                                 <ul
-                                    class="flex flex-col md:flex-row font-medium gap-2 md:gap-5 mt-4 md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                                    class="flex flex-col md:flex-row font-medium gap-2 md:gap-5 mt-4 md:mt-0 xl:space-x-8 lg:space-x-4">
                                     <li>
                                         <a href="./index.html"
                                             class="block text-gray-900 border-0 lg:border-b hover:border-none hover:bg-gray-100 border-black text-base font-normal p-1 lg:p-0">
@@ -108,6 +109,18 @@
                                             Sign Up
                                         </a>
                                     </li>
+                                    <li class="block md:hidden">
+                                        <a href="./wishlist.html"
+                                            class="block md:hidden text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
+                                            wishlist
+                                        </a>
+                                    </li>
+                                    <li class="block md:hidden">
+                                        <a href="./cart.html"
+                                            class="block md:hidden text-gray-900 border-0 lg:hover:border-b sm:hover:border-0 border-black text-base font-medium hover:bg-gray-100 p-1 lg:p-0">
+                                            cart
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -115,39 +128,43 @@
                 </div>
             </div>
             <!-- Right section -->
-            <div class="col-span-12 md:col-span-7 lg:col-span-4 ">
-                <div class="flex md:justify-end items-center gap-3 md:gap-5">
-                    <div class="relative flex items-center">
-                        <input type='text' placeholder='what are you looking for?'
-                            class="shadow-lg py-1.5 pl-3 pr-16 text-sm text-[#FAFAFA] rounded bg-white border border-gray-400 w-full outline-[#333]" />
-
-                        <div class="absolute right-4">
-                            <img src="./images/searchicon.png">
+            <div class="col-span-12 md:col-span-7 lg:col-span-5 ">
+                <div class="flex md:justify-end items-center gap-3 lg:gap-5">
+                
+                    <div class="relative  max-w-md">
+                        <input type="text" placeholder="what are you looking for?"
+                            class=" py-1.5 pl-3 mr-16 text-sm text-gray-700 rounded bg-[#F5F5F5] border border-gray-300 w-full outline-none " />
+                        <div class="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+                            <img src="./images/searchicon.png" class="w-5 h-5">
                         </div>
                     </div>
-                       <a href="./wishlist.html">              
-<button type="button" class="relative inline-flex items-center text-sm font-medium text-center text-white  rounded-lg">
-    <img src="./images/heart small.png">
-    <span class="sr-only">Notifications</span>
-      <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#DB4444]  rounded-full -top-1 -end-1">4</div>
-    </button>
-</a> 
-<a href="./cart.html">              
-    <button type="button" class="relative inline-flex items-center text-sm font-medium text-center text-white  rounded-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-        fill="#000000">
-        <path
-            d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-    </svg>
-        <span class="sr-only">Notifications</span>
-          <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#DB4444]  rounded-full -top-1 -end-1">4</div>
-        </button>
-    </a>
-    <a href="./myaccount.html">
-                    <button>
-                        <img src="./images/user .png">
-                    </button>
-                </a>
+                
+                    <a href="./wishlist.html"class="flex justify-center items-center">              
+                        <button type="button" class="relative inline-flex items-center text-sm font-medium text-center text-white  rounded-lg">
+                            <img src="./images/heart small.png">
+                            <span class="sr-only">Notifications</span>
+                              <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#DB4444]  rounded-full -top-1 -end-1">4</div>
+                            </button>
+                        </a> 
+                        <a href="./cart.html" class="flex justify-center items-center">              
+                            <button type="button" class="relative inline-flex items-center text-sm font-medium text-center text-white  rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000000">
+                                <path
+                                    d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                            </svg>
+                                <span class="sr-only">Notifications</span>
+                                  <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#DB4444]  rounded-full -top-1 -end-1">4</div>
+                                </button>
+                            </a>
+                            <a href="./myaccount.html" class="hidden md:flex w-7 h-7 ">
+                                            <button>
+                                                <img src="./images/user .png">
+                                            </button>
+                                        </a>
+         
+             
+          
                 </div>
             </div>
         </div>
@@ -218,10 +235,12 @@
                             </td>
                             <td class="p-4 font-semibold text-gray-900 dark:text-white">$550</td>
                             <td class="p-4 font-semibold text-gray-900 dark:text-white">
-                                    <input type="number" id="number-input"  class="bg-gray-50 border border-[#7D8184] rounded-md focus-visible:none text-[#7D8184] text-sm block  p-2.5 w-[4.313rem]" placeholder="02" required />
+                            <input type="number" id="number-input"  class="bg-gray-50 border border-[#7D8184] rounded-md focus-visible:none text-[#7D8184] text-sm block  p-2.5 w-[4.313rem]" placeholder="02" required />
                             </td>
+                        
                             <td class=" px-6 py-4 font-semibold text-gray-900 dark:text-white">$1100</td>
                         </tr>
+                   
                     </tbody>
                  
                 </table>

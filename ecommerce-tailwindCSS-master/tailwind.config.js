@@ -4,8 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      visibility: ["group-hover"],
+      // visibility: ["group-hover"],
     },
   },
-  plugins: [],
+  plugins: [
+   
+  ],
 }
